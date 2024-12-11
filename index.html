@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get your vehicle looking like new with professional mobile auto detailing services from 604 Auto Detailing. Offering eco-friendly, high-quality detailing in [Your City].">
+    <meta name="keywords" content="auto detailing, mobile detailing, car wash, professional detailing [Your City]">
+    <title>604 Auto Detailing | Premium Mobile Auto Detailing Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#booking">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Homepage Banner -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to 604 Auto Detailing</h1>
+            <p>Your trusted mobile auto detailing service in [Your City]. We come to you, so you don’t have to go anywhere!</p>
+            <a href="#booking" class="cta-btn">Book Your Appointment</a>
+        </div>
+        <img src="images/car-detailing.jpg" alt="Mobile Auto Detailing Service" class="hero-image">
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <img src="images/exterior-detailing.jpg" alt="Exterior Detailing">
+                <h3>Exterior Detailing</h3>
+                <p>Hand wash, waxing, tire shine, and paint protection for your car’s exterior.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/interior-detailing.jpg" alt="Interior Detailing">
+                <h3>Interior Detailing</h3>
+                <p>Complete cleaning of your car’s interior, including upholstery, dashboard, and odor removal.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/full-detailing.jpg" alt="Full Detailing">
+                <h3>Full Detailing Packages</h3>
+                <p>Get the complete detailing experience for your car, inside and out!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking">
+        <h2>Book Your Appointment</h2>
+        <form action="submit_booking.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <label for="vehicle">Vehicle Make and Model:</label>
+            <input type="text" id="vehicle" name="vehicle" required>
+            
+            <label for="service">Select Service:</label>
+            <select id="service" name="service" required>
+                <option value="Exterior Detailing">Exterior Detailing</option>
+                <option value="Interior Detailing">Interior Detailing</option>
+                <option value="Full Detailing">Full Detailing</option>
+            </select>
+            
+            <label for="date">Preferred Date and Time:</label>
+            <input type="datetime-local" id="date" name="date" required>
+            
+            <button type="submit" class="cta-btn">Submit Booking</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 604 Auto Detailing. All Rights Reserved.</p>
+        <p>Contact us at: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+    </footer>
+</body>
+</html>
